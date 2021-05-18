@@ -1,8 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-* {
+body {
+  margin: 0;
+  background-color: #f3f3f3;
   font-family: "Montserrat", sans-serif; }
-
-h1 {
-  color: red; }
+  body header {
+    padding: 1rem;
+    background-color: #ffcd00; }
+    body header .logo {
+      width: 100px; }
+  body main {
+    padding: 1rem; }
+    body main .produtos {
+      background-color: #fff;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin: 1rem;
+      box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.12); }
+      body main .produtos__produto button {
+        color: #fff;
+        padding: 1rem;
+        background-color: #22b14c;
+        border: transparent;
+        border-radius: 0.5rem; }
 
 /*# sourceMappingURL=style.css.map */
