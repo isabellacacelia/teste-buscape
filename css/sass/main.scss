@@ -1,19 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
 // Variables
 $green: #22b14c;
 $yellow: #ffcd00;
 $gray: #f3f3f3;
+$dark-gray: #eaeaea;
 
+* {
+  font-family: "Montserrat", sans-serif;
+}
 body {
   margin: 0;
   background-color: $gray;
-  font-family: "Montserrat", sans-serif;
   header {
     padding: 1rem;
     background-color: $yellow;
     .logo {
       width: 100px;
+    }
+    .menu {
+      svg {
+        width: 40px;
+      }
     }
   }
   main {
@@ -24,13 +32,53 @@ body {
       padding: 1rem;
       margin: 1rem;
       box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.12);
+      hr {
+        border: 1px solid $dark-gray;
+        background: $dark-gray;
+      }
       &__produto {
-        button {
-          color: #fff;
-          padding: 1rem;
-          background-color: $green;
-          border: transparent;
-          border-radius: 0.5rem;
+        font-weight: 500;
+      }
+      .produto {
+        &__nome {
+          display: flex;
+          font-size: 1.5rem;
+          svg {
+            fill: $yellow;
+            width: 1rem;
+            margin: 0 1rem;
+          }
+        }
+        &__preco {
+          display: flex;
+          justify-content: space-between;
+          &-parcelado {
+            color: $green;
+            margin: 0;
+            span {
+              font-size: 2rem;
+            }
+          }
+          &-avista {
+            margin: 0;
+            span {
+              color: $green;
+            }
+          }
+          &-button {
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 1rem;
+            background-color: $green;
+            border: transparent;
+            border-radius: 0.3rem;
+            &--seta {
+              width: 15px;
+              fill: #fff;
+              margin-left: 10px;
+            }
+          }
         }
       }
     }
