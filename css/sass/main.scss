@@ -13,14 +13,29 @@ body {
   margin: 0;
   background-color: $gray;
   header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: $yellow;
     .logo {
       width: 100px;
     }
     .menu {
-      svg {
-        width: 40px;
+      img {
+        position: relative;
+        width: 2rem;
+      }
+      &__notificacao {
+        position: absolute;
+        right: 35px;
+        top: 50px;
+        display: block;
+        width: 1.25rem;
+        background: red;
+        color: #fff;
+        text-align: center;
+        border-radius: 1rem;
       }
     }
   }
@@ -52,6 +67,7 @@ body {
         &__preco {
           display: flex;
           justify-content: space-between;
+          align-items: center;
           &-parcelado {
             color: $green;
             margin: 0;
@@ -66,6 +82,8 @@ body {
             }
           }
           &-button {
+            display: flex;
+            align-items: center;
             color: #fff;
             cursor: pointer;
             font-weight: bold;

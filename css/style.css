@@ -6,12 +6,26 @@ body {
   margin: 0;
   background-color: #f3f3f3; }
   body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: #ffcd00; }
     body header .logo {
       width: 100px; }
-    body header .menu svg {
-      width: 40px; }
+    body header .menu img {
+      position: relative;
+      width: 2rem; }
+    body header .menu__notificacao {
+      position: absolute;
+      right: 35px;
+      top: 50px;
+      display: block;
+      width: 1.25rem;
+      background: red;
+      color: #fff;
+      text-align: center;
+      border-radius: 1rem; }
   body main {
     padding: 1rem; }
     body main .produtos {
@@ -34,7 +48,8 @@ body {
           margin: 0 1rem; }
       body main .produtos .produto__preco {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        align-items: center; }
         body main .produtos .produto__preco-parcelado {
           color: #22b14c;
           margin: 0; }
@@ -45,6 +60,8 @@ body {
           body main .produtos .produto__preco-avista span {
             color: #22b14c; }
         body main .produtos .produto__preco-button {
+          display: flex;
+          align-items: center;
           color: #fff;
           cursor: pointer;
           font-weight: bold;
